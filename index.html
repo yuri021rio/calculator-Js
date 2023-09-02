@@ -15,33 +15,34 @@
         <!-- a tag table é usada para fazer tabela, a tag tr serve para criar as linhas da tabela
          para construir a coluna usamos a tag td-->
           <table>
+            <!-- o onclick significa que ALGO VAI acontecer, nesse caso, vai chamar uma função do JS-->
             <tr>
-              <td> <button>AC</button> </td>
-              <td> <button><i class="fa-solid fa-delete-left"></i></button> </td>
-              <td> <button><i class="fa-solid fa-divide"></i></button></i> </td>
+              <td> <button class="btn ac" style="width: 106px;" onclick= "clean()">AC</button> </td>
+              <td> <button class="btn delete" onclick= "backspace()"><i class="fa-solid fa-delete-left"></i></button> </td>
+              <td> <button class="btn especial" onclick= "insert('/')"><i class="fa-solid fa-divide"></i></button></i> </td>
             </tr>
             <tr>
-              <td> <button>7</button> </td>
-              <td> <button>8</button> </td>
-              <td> <button>9</button></i> </td>
-              <td> <button><i class="fa-solid fa-xmark"></i></button></td>
+              <td> <button class="btn" onclick ="insert('7')">7</button></td>
+              <td> <button class="btn" onclick ="insert('8')">8</button></td>
+              <td> <button class="btn" onclick ="insert('9')">9</button></i> </td>
+              <td> <button class="btn especial" onclick ="insert('*')"><i class="fa-solid fa-xmark"></i></button></td>
+            </tr> 
+            <tr>
+              <td> <button class="btn" onclick ="insert('4')">4</button> </td>
+              <td> <button class="btn" onclick ="insert('5')">5</button> </td>
+              <td> <button class="btn" onclick ="insert('6')">6</button></i> </td>
+              <td> <button class="btn especial" onclick ="insert('-')"><i class="fa-solid fa-minus"></i></button></td>
             </tr>
             <tr>
-              <td> <button>4</button> </td>
-              <td> <button>5</button> </td>
-              <td> <button>6</button></i> </td>
-              <td> <button><i class="fa-solid fa-minus"></i></button></td>
+              <td> <button class="btn" onclick ="insert('1')">1</button> </td>
+              <td> <button class="btn" onclick ="insert('2')">2</button> </td>
+              <td> <button class="btn" onclick ="insert('3')">3</button></i> </td>
+              <td> <button class="btn especial" onclick ="insert('+')"><i class="fa-solid fa-plus"></i></button></td>
             </tr>
             <tr>
-              <td> <button>1</button> </td>
-              <td> <button>2</button> </td>
-              <td> <button>3</button></i> </td>
-              <td> <button><i class="fa-solid fa-plus"></i></button></td>
-            </tr>
-            <tr>
-              <td> <button>0</button> </td>
-              <td> <button>.</button> </td>
-              <td> <button><i class="fa-solid fa-equals"></i></button> </td>
+              <td> <button class="btn" onclick ="insert('0')">0</button> </td>
+              <td> <button class="btn">.</button> </td>
+              <td> <button class="btn igual" style="width: 106px;" onclick ="confirm()"><i class="fa-solid fa-equals"></i></button> </td>
             </tr>
             
             
